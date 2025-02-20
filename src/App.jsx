@@ -1,10 +1,12 @@
 import React from "react";
+import { Route, Router, Routes } from "react-router-dom";
+import { Index } from "./pages/Index";
 
 function App() {
   return (
-    <>
-      <h1 className="bg-orange-300 text-amber-500">hello</h1>
-    </>
+    <Routes>
+      <Route path="/" element={<Index />} />
+    </Routes>
   );
 }
 
